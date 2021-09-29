@@ -1,0 +1,16 @@
+<h2>This is my {{name}}</h2>
+
+
+<div *ngFor="let product of products">
+    <h3>{{product.name}}</h3>
+    <p>{{product.time}}</p>
+    <p>{{product.reason}}</p>
+</div>
+
+<button (click)="openDropDown()">My ToDoList</button>
+<ul *ngIf="isOpenMenu" [ngClass]="isOpenMenu ? 'open' : ''">
+    <li>make piece with my Buba</li>
+    <li>as soon as he will stop be angry at me</li>
+    <li>because it is ok to make fight sometimes</li>
+    <li>and i really need him in my life</li>
+</ul>
